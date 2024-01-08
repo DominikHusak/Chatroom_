@@ -1,0 +1,204 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+@keyframes color {
+    0%   { background: #d7d7d7; }
+    10%  { background: #bebebe; }
+    20%  { background: #a1a1a1; }
+    30%  { background: #919191; }
+    40%  { background: #7c7c7c; }
+    50%  { background: #636363; }
+    60%  { background: #7c7c7c; }
+    70%  { background: #919191; }
+    80%  { background: #a1a1a1; }
+    90%  { background: #bebebe; }
+    100% { background: #d7d7d7; }
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: #ffffff; 
+    animation: color 9s infinite linear;
+    text-align: center;
+}
+
+.join_screen{
+    background: #ffffff;
+    animation: color 9s infinite linear;
+    text-align: center;
+}
+
+.appBody{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    background: white;
+}
+
+.appBody  .screen{
+    display: none;
+}
+
+.appBody  .screen.active{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.screen .form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+}
+
+.screen .form_input{
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.screen .form_input_buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.screen .form_input label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.screen .form_input input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #4e4e4e;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.screen .form_input button{
+    padding: 10px 20px;
+    background: #4d4d4d;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+.screen .form_input button:hover {
+    background-color: #6b6b6b;
+}
+
+.chat_screen .header{
+    background: #4e4e4e;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.chat_screen .header .logo{
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 5px 10px;
+}
+
+.chat_screen .header button{
+    padding: 5px 10px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+.chat_screen .messages{
+    width: 100%;
+    height: calc(100% - 100px);
+    background: #b4b4b4;
+    overflow: auto;
+}
+
+.chat_screen .messages .message{
+    display: flex;
+    padding: 10px;
+}
+
+.chat_screen .messages .message > div{
+    max-width: 80%;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px 5px #0000000d;
+    padding: 10px;
+}
+
+.chat_screen .messages .message.my_message{
+    justify-content: flex-end;
+}
+
+.chat_screen .messages .message.other_message{
+    justify-content: flex-start;
+}
+
+.chat_screen .messages .message .name{
+    font-size: 13px;
+    color: #615858;
+    margin-bottom: 5px;
+}
+
+.chat_screen .messages .message .text{
+    word-wrap: break-word;
+}
+
+.chat_screen .messages .update{
+    text-align: center;
+    padding: 10px;
+}
+
+.chat_screen .typebox{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+.chat_screen .typebox input{
+    flex: 1;
+    height: 50px;
+    font-size: 18px;
+}
+
+.chat_screen .typebox button{
+    width: 80px;
+    height: 100%;
+    background: #4e4e4e;
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.chat_screen .typebox button:hover {
+    background-color: #6b6b6b;
+}
+
+.chat_screen .messages .message .Message{
+    border: 2px solid #000000;
+    border-radius: 10px;
+} 
+
+
+
+
+
+
